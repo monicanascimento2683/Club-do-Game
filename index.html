@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Club do Game</title>
+</head>
+
+<body>
+   
+    <header>
+        <a class="home">Home</a>
+        <a class="eventos">Eventos</a>
+        <a class="filie-se">Filie-se</a>
+    </header>
+    <div>
+        <img src="./game.png" alt="foto do game">
+        <h1>O que você encontra aqui</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis sequi itaque exercitationem earum mollitia
+            tempore consectetur rerum, provident totam dolores impedit
+            quae numquam maxime vero, ex veritatis id? Tenetur,
+            expedita!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perferendis unde iure, natus quibusdam omnis nam numquam ad,
+            quidem dolorem ex, in suscipit. Consequatur, quos.
+            Dolore quos obcaecati doloremque fuga blanditiis!
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Fugiat qui amet eveniet, laudantium blanditiis quam delectus soluta
+            consectetur nisi quasi similique rem, excepturi commodi,
+            saepe dignissimos vitae quo praesentium? Ipsa!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Magnam maiores asperiores, ex deleniti, inventore qui rem
+            sequi autem alias quia repellendus? Fugiat praesentium alias
+            sapiente? Voluptates deserunt asperiores laudantium voluptate.
+        </p>
+        <button onclick="abrir()">Entrar em Contato</button>
+    </div>
+    <form action="https://formsubmit.co/nikanascimento26@gmail.com" method="POST">
+        <input type="text" name="name" required placeholder="Nome">
+        <input type="email" name="email" required placeholder="Email">
+        <textarea type="text" name="duvida" placeholder="Sua dúvida aqui"></textarea>
+        <button type="submit">ENVIAR</button>
+        <button onclick="fechar()" type="button" class="voltar">Voltar</button>
+    </form>
+</body>
+
+<script>
+    function abrir() {
+        document.querySelector("form").style.opacity = 1
+        document.querySelector("div").style.opacity = 0.2
+    }
+
+    function fechar() {
+        document.querySelector("form").style.opacity = 0
+        document.querySelector("div").style.opacity = 1
+    }
+
+</script>
+
+
+</html>
